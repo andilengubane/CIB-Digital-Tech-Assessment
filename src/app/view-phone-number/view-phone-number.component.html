@@ -1,0 +1,6 @@
+<h3>Contact List</h3>
+<ul *ngIf="data.phonebookList">
+  <li *ngFor="let d of data.phonebookList">
+    <p>{{d.Name}}: {{d.PhoneNumber}}</p>
+  </li>
+</ul>
